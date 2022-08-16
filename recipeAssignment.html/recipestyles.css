@@ -1,0 +1,305 @@
+
+
+
+/* Add a background to top nav*/
+.topnav {
+    background-color: #f1f3ee;
+    overflow:hidden;
+    border-bottom: 3px solid; 
+    border-color:#734060; 
+    
+}
+
+
+/* Style of links inside the nav bar*/
+.topnav a {
+    float: right;
+    color:#855f76; 
+    text-align:center; 
+    padding: 14px 16px;
+    text-decoration:none; 
+    font-size: 17px;
+    
+}
+
+/* Change color of links on hover*/
+.topnav a:hover {
+    background-color:#734060; 
+    color:#c8bbc3; 
+    transition: 0.2 ease;
+    
+}
+
+/* Add color to current active link */
+.topnav a.active {
+    background-color:#734060; 
+    color: white; 
+    transition: 0.2 ease;
+}
+
+
+
+body {
+    background-color: #f1f3ee;
+}
+
+
+
+h1{
+    color:rgb(240, 236, 236);
+    background-color: #734060;
+    height: 80px;
+    font-family: sans-serif;
+    line-height:1.125;
+    border: 1px solid #947c8b;
+    padding-top: 30px;
+    padding-left:700px;
+    position: center;    
+}
+
+
+h2{
+    color:rgb(240, 236, 236);
+    background-color: #734060;
+    height: 50px;
+    font-family: sans-serif;
+    line-height:1.125;
+    border: 1px solid #947c8b;
+    padding-top: 30px;
+    padding-left:700px;
+    position: center; 
+    overflow: hidden;!impotant;
+    display:block;  
+   
+}
+
+
+p{
+    color:rgb(26 26 26);
+    font-family: Raleway,"Helvetica Neue",sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-left: 500px;
+
+    
+}
+
+.media_block{
+    float:left;
+    width:800px;
+    margin-left: 90px;
+    opacity: 0.8;      
+}
+
+.right {
+    float: right;
+    right: 300;
+    width: 600px;
+    border: 3px solid #734060;
+    padding: 50px;
+    margin-right: 300px;
+    margin-top: 480px;
+    font-family: sans-serif;
+    display:block; 
+    background-color: #f1f3ee; 
+    
+}
+
+.left{
+    position:absolute;
+    top: 800;
+    right: 1500; 
+    width: 300px;
+    font-family:sans-serif;
+}
+
+
+.recipes {
+    float;left;
+    top: 3000; 
+}
+
+.recipes__card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #515656 0%, #524a53 100%);
+    transition: 0.3s ease-in;
+    position:absolute;
+    top:1200;
+    right: 1500;
+    width:300px;
+  }
+
+  .recipes__card p {
+    position:absolute;
+    top: 1200;
+    right: 1500; 
+    width: 300px;
+    font-family:sans-serif;
+  }
+
+  .recipes__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .recipes__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+  }
+
+  .recipes__card h2 {
+    text-align: center;
+  }
+  
+  .recipes__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+  }
+  
+  .recipes__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+
+
+
+@media screen and (max-width: 896px) {
+    .left {
+      display: center;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 90%;
+      margin-top: 250px;
+      margin-right: -1800px;
+      font-size: 30px; 
+      background-color: #c8bbc3;
+      color:#734060
+    }
+
+    .right {
+    display: center;
+      width: 100%;
+      margin-right: -420px;
+      height: 90%;
+      margin-top: 700px;
+      font-size: 30px; 
+      padding-right: 100px;
+      border: none;
+      position: relative; 
+      
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+      }
+      
+    
+
+    h2 {
+        display: center;
+      
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 40px;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+      }
+       
+} 
+
+
+
+
+
+
+
+
+
+  /*@media screen and (max-width: 768px) {
+    .media_block {
+      width: 100%;
+      height: auto; 
+      margin-left: 0px; 
+  }
+  
+
+}
+*/
+
+    
+ 
+
+/*@media screen and(max-width: 896px) {
+    .right{
+        grid-template-columns: repeat(1,1fr);
+        margin-left:0%;   
+    }
+    .media_block{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .topnav{
+        grid-template-columns: repeat(1,1fr);
+        margin-left:0%;
+
+    }
+
+    .left{
+        grid-template-columns: repeat(1,1fr);
+        margin-left:0%;
+        
+    }
+
+    .p {
+        font-size: 10px;
+        margin-left:0; 
+        float: left;
+        display:center;
+      }
+
+    .h2 {
+        font-size: 60px;
+        float: left; 
+      }
+    
+    .h2 {
+        font-size: 40px;
+      }
+    
+
+    .h1 {
+        font-size: 20px;
+      }
+    
+      .h1 {
+        font-size: 20px;
+      }
+}
+
+*/
+
+

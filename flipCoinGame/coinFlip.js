@@ -41,7 +41,7 @@ function disableButton(){
     },3000);
 }
 
-//reset the stats back to zero when reset button is pressed. 
+//reset the stats back to zero when reset button is selected
 resetBtn.addEventListener("click",() => {
     coin.style.animation = "none";
     heads = 0;

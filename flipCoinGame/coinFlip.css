@@ -39,6 +39,7 @@ h1{
     line-height: 25px; 
 }
 
+/*section for coin images and animations */
 .coinimages {
     height: 150px; 
     width: 150px; 
@@ -68,6 +69,8 @@ h1{
     transform: rotateX(180deg); 
 }
 
+
+/*animation transitions*/
 @keyframes spin-tails{
     0%{
         transform: rotateX(0); 

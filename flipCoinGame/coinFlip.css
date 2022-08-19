@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 *{
     padding: 0; 
     margin: 0; 
@@ -7,11 +9,12 @@
 
 body {
     height: 100%; 
-    background-color: rgb(41, 38, 38) 
+    background-color: rgb(41, 38, 38)
+    
 }
 
 .container {
-    background-color:rgb(200, 205, 207); 
+    background-color:rgb(82, 85, 86); 
     width: 400px; 
     padding: 50px; 
     position: absolute; 
@@ -22,13 +25,18 @@ body {
     border-radius: 10px; 
     -webkit-perspective: 300px; 
     perspective: 300px; 
-    border: dashed rgb(22, 22, 212)
+    border: dashed rgb(22, 22, 212);
+    
+    
 }
 
 h1{
     text-align: center; 
     padding-bottom: 5px; 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px; 
+    padding-bottom: 15px; 
+    
     
 }
 
@@ -36,10 +44,13 @@ h1{
     text-align: right; 
     color:rgb(22, 22, 212); 
     font: 25px; 
-    line-height: 25px; 
+    line-height: 25px;
+    padding-top:  
+
+    
 }
 
-/*section for coin images and animations */
+/*section for coin images and animation */
 .coinimages {
     height: 150px; 
     width: 150px; 

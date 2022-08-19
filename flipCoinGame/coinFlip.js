@@ -14,13 +14,13 @@ flipBtn.addEventListener("click", () => {
     if(i){
         //section will spin the coin based on css animations
         setTimeout(function(){
-            coin.style.animation = "spin-heads 3s forwards";
+            coin.style.animation = "spin-heads 3s forwards"; //animation on css
         }, 100);
         heads++;
     }
     else{
         setTimeout(function(){
-            coin.style.animation = "spin-tails 3s forwards";
+            coin.style.animation = "spin-tails 3s forwards"; //animation time on css
         }, 100);
         tails++;
     }
@@ -28,12 +28,14 @@ flipBtn.addEventListener("click", () => {
     disableButton();
 });
 
-//if coin is head, head count is updated
+//if coin is head and head count is updated
 //if coin is tail, tail count stat is updated 
 function updateStats(){
     document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
     document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
 }
+
+
 function disableButton(){
     flipBtn.disabled = true;
     setTimeout(function(){

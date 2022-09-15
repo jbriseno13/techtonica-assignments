@@ -1,0 +1,137 @@
+
+
+
+body{
+  
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.App {
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  font-family: "Raleway", sans-serif;
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  margin-top: 200px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 30px;
+
+}
+
+.textHeader{
+  align-self: center;
+}
+
+.ListMain{
+  align-self: center;
+}
+
+.question-count{
+  margin-top: 25px;
+}
+
+.Container {
+  display: table-cell;
+  vertical-align: middle;
+  align-self: center;
+ 
+}
+
+.question-section{
+  /* Change background color */
+  background-color: rgba(57, 35, 120, 0.442);
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+
+  border-radius: 12px;
+
+  width: 70%;
+
+}
+
+
+.input{
+  border: 1px solid black; 
+    background-color: whitesmoke; 
+    outline: 0; 
+    width: 100%; 
+    padding: 1rem; 
+    border-radius:25px; 
+    display: block; 
+    margin: 2px auto 5rem auto; 
+    font-size: 1rem; 
+}
+
+.start_btn {
+  border: 0; 
+  outline: 0; 
+  width: 110%; 
+  padding: 1rem; 
+  border-radius: 25px; 
+  cursor: pointer; 
+  background-color: black; 
+  color: white; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  display:block; 
+  margin: 2rem auto; 
+}
+
+select{
+  border: 1px solid black; 
+    background-color: whitesmoke; 
+    outline: 0; 
+    width: 120%; 
+    padding: 1rem; 
+    border-radius:25px; 
+    display: block; 
+    margin: 2px auto 5rem auto; 
+    font-size: 1rem; 
+}
+
+h3{
+  font-size: 30px;
+}
+
+.question-section{
+    height: 200px;
+    width: 400px; 
+    background-color: whitesmoke; 
+    padding: 2rem; 
+    border-radius: 1rem; 
+    position: relative; 
+    border: 1px solid black; 
+    margin-left: 40px; 
+    margin-top: 80px;  
+}
+
+button{
+  padding: 10px; 
+    background-color: black; 
+    color: white; 
+    font-size: 1rem;
+    font-weight: bold; 
+    cursor: pointer; 
+    margin: 1rem 0; 
+    width: 50%; 
+    text-align: center; 
+    letter-spacing: 2px; 
+    font-size: 1rem; 
+    border-radius: 5px; 
+}
+
+button:hover {
+  background-color: #218017b3;
+}

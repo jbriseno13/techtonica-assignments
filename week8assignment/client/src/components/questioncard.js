@@ -8,10 +8,7 @@ function decodeHtml(html) {
 }
 
 const QuestionCard = ({ question, count, setCount, rightAnswer }) => {
-  
   const [answerOption, setAnswerOption] = useState("");
-
-
 
   //correct answer color
   const handleClick = (e) => {
@@ -20,11 +17,12 @@ const QuestionCard = ({ question, count, setCount, rightAnswer }) => {
 
     if (e.target.value == question.correct_answer) {
       e.target.style.backgroundColor = "green";
-      setAnswerOption("");
-      setCount((c) => c + 1)
+      setAnswerOption("Correct");
+      setCount((c) => c + 1);
       console.log(answerOption);
     } else {
-      e.target.style.backgroundColor = "green"; 
+      e.target.style.backgroundColor = "red";
+      setAnswerOption("Correct Answer: " + question.correct_answer);
     }
   };
 
@@ -32,31 +30,30 @@ const QuestionCard = ({ question, count, setCount, rightAnswer }) => {
   //   //incorrect_answers[0]
   //   //correct_answer
 
-//__________________________________________________________
+  //__________________________________________________________
   //randomizes which option is the correct answer
-// const randomAnswerPlacement = (arr, correct) => {
-//   const arrTwo = [...arr];//spread operator 
-  
-//   //random num between 0 and incorrect_answers
-//   const ranNum = Math.floor (Math.random()* arr.length)
-//   //correct_answer in a dif index
-//   arrTwo.splice(ranNum, 0, correct); 
-//   return arrTwo; 
-// };
+  // const randomAnswerPlacement = (arr, correct) => {
+  //   const arrTwo = [...arr];//spread operator
 
-// // const ranNum = Math.floor(Math.random()*(3))
-// // question.incorrect_answers.splice(ranNum, 0, question.correct_answer)
+  //   //random num between 0 and incorrect_answers
+  //   const ranNum = Math.floor (Math.random()* arr.length)
+  //   //correct_answer in a dif index
+  //   arrTwo.splice(ranNum, 0, correct);
+  //   return arrTwo;
+  // };
 
+  // // const ranNum = Math.floor(Math.random()*(3))
+  // // question.incorrect_answers.splice(ranNum, 0, question.correct_answer)
 
-// //following code will reset the locations of both incorrect_answers and correct_answer
-// //this will happen after each question is answered. 
+  // //following code will reset the locations of both incorrect_answers and correct_answer
+  // //this will happen after each question is answered.
 
-// useEffect(() =>{
-//   setAnswerOption(randomAnswerPlacement(question.incorrect_answers, question.correct_answer));
-//   rightAnswer(decodeHtml(question.correct_answer));
-// },[question]);
+  // useEffect(() =>{
+  //   setAnswerOption(randomAnswerPlacement(question.incorrect_answers, question.correct_answer));
+  //   rightAnswer(decodeHtml(question.correct_answer));
+  // },[question]);
 
-//_________________________________________________________________________
+  //_________________________________________________________________________
 
   return (
     <div className={"question-section"}>
@@ -70,7 +67,7 @@ const QuestionCard = ({ question, count, setCount, rightAnswer }) => {
             </button>
           );
         })}
-        
+
         {/* {wrongOptions.map((answer, index) => {
 //           return (
 //             <button

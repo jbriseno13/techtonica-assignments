@@ -106,7 +106,7 @@ h3{
 }
 
 .question-section{
-    height: 200px;
+    height: 400px;
     width: 400px; 
     background-color: whitesmoke; 
     padding: 2rem; 
@@ -125,7 +125,7 @@ button{
     font-weight: bold; 
     cursor: pointer; 
     margin: 1rem 0; 
-    width: 50%; 
+    width: 100%; 
     text-align: center; 
     letter-spacing: 2px; 
     font-size: 1rem; 
@@ -134,4 +134,12 @@ button{
 
 button:hover {
   background-color: #218017b3;
+}
+
+.score-section{
+  font-weight: bold; 
+    bottom: 1rem; 
+    left: 1rem; 
+    padding-top: 20px;
+  font-size:large;
 }

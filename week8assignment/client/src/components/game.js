@@ -5,6 +5,7 @@ const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
     const [answerOptions, setAnswerOptions] = useState([])
+    const[count, setCount] =useState(0);
 
     // const [questionScore, setQuestionScore] = usestate([]);
 
@@ -36,9 +37,9 @@ const Game = (props) => {
                 <span>Question 1</span>/{questions.length}
             </div>
             {questions.map((question, index) => {
-                return <QuestionCard key={index} question={question} />
+                return <QuestionCard key={index} question={question} count={count} setCount={setCount} />
             })}
-            <div className='score-section'>You scored 1 out of {questions.length}</div>
+            <div className='score-section'>You scored {count} out of {questions.length}</div>
 
         </div>
     )
